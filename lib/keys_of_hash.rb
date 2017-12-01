@@ -7,7 +7,7 @@ class Hash
 
     self.each do |key,value|
       counter=0
-      binding.pry
+      # binding.pry
 
       while counter < arguments.size
         if value == arguments[counter]
