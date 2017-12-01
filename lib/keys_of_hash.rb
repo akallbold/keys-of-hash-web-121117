@@ -6,8 +6,9 @@ class Hash
 
 
     self.each do |key,value|
-      binding.pry
       counter=0
+      binding.pry
+
       while counter < arguments.size
         if value == arguments[counter]
           output << key
