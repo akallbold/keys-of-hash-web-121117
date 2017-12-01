@@ -9,7 +9,7 @@ class Hash
       binding.pry
       while counter < arguments.size
         if value = arguments[counter]
-          output << value
+          output << key
         end
         counter+=1
       end
