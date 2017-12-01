@@ -6,7 +6,7 @@ class Hash
     counter=0
 
     self.each do |key,value|
-      # binding.pry
+      binding.pry
       while counter < arguments.size
         if value = arguments[counter]
           output << key
@@ -14,8 +14,9 @@ class Hash
         counter+=1
       end
     end
+  
     output
-    binding.pry
+    # binding.pry
   end
 
 end
