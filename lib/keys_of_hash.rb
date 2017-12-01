@@ -1,5 +1,18 @@
+require 'pry'
+
 class Hash
-  def keys_of(arguments)
-    # code goes here
+  def keys_of(*arguments)
+    output= []
+    counter=0
+
+    self.each do |key,value|
+      while counter < arguments.size
+        if key = arguments[counter]
+          output << value
+        end
+        counter+=1
+      end
+    end
+    output
   end
 end
