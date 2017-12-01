@@ -14,7 +14,7 @@ class Hash
         counter+=1
       end
     end
-  
+
     output
     # binding.pry
   end
